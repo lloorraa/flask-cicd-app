@@ -21,7 +21,7 @@ jobs:
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install -r app/requirements.txt  # Correct path to the file
 
     - name: Build Docker Image
       run: docker build -t flask-cicd-app .
